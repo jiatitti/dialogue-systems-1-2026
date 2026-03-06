@@ -9,13 +9,13 @@ const inspector = createBrowserInspector();
 
 const azureCredentials = {
   endpoint:
-    "https://YOUR_REGION.api.cognitive.microsoft.com/sts/v1.0/issuetoken",
+    "https://northeurope.api.cognitive.microsoft.com/sts/v1.0/issuetoken",
   key: KEY,
 };
 
 const settings: Settings = {
   azureCredentials: azureCredentials,
-  azureRegion: "YOUR_REGION",
+  azureRegion: "northeurope",
   asrDefaultCompleteTimeout: 0,
   asrDefaultNoInputTimeout: 5000,
   locale: "en-US",
@@ -93,7 +93,10 @@ const dmMachine = setup({
       },
       states: {
         Prompt: {
-          entry: { type: "spst.speak", params: { utterance: `Hello world!` } },
+          entry: {
+            type: "spst.speak",
+            params: { utterance: `You can speak now!` },
+          },
           on: { SPEAK_COMPLETE: "Ask" },
         },
         NoInput: {
@@ -122,9 +125,13 @@ const dmMachine = setup({
       entry: {
         type: "spst.speak",
         params: ({ context }) => ({
-          utterance: `You just said: ${context.lastResult![0].utterance}. And it ${
-            isInGrammar(context.lastResult![0].utterance) ? "is" : "is not"
-          } in the grammar.`,
+          // utterance: `You just said: ${context.lastResult![0].utterance}. And it ${
+          //   isInGrammar(context.lastResult![0].utterance) ? "is" : "is not"
+          // } in the grammar.`,
+
+          utterance:
+            `You just said: ${context.lastResult![0].utterance}. ` +
+            `My confidence is ${Math.round(context.lastResult![0].confidence * 100)} percent.`,
         }),
       },
       on: { SPEAK_COMPLETE: "Done" },
