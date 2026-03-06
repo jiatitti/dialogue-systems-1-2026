@@ -1,0 +1,26 @@
+Original Performance:
+
+Serena Williams reads "Still I Rise" by Maya Angelou
+https://www.youtube.com/watch?v=TZO08C5vL2A
+
+My SSML Code with Part B-VG:
+
+<!--ID=B7267351-473F-409D-9765-754A8EBCDE05;Version=1|{"VoiceNameToIdMapItems":[{"Id":"38db11b6-fa64-4989-8d75-4a48695ee5cd","Name":"Microsoft Server Speech Text to Speech Voice (en-US, SaraNeural)","ShortName":"en-US-SaraNeural","Locale":"en-US","VoiceType":"StandardVoice"}]}-->
+<!--ID=FCB40C2B-1F9F-4C26-B1A1-CF8E67BE07D1;Version=1|{"Files":{}}-->
+<!--ID=5B95B1CC-2C7B-494F-B746-CF22A0E779B7;Version=1|{"Locales":{"en-US":{"AutoApplyCustomLexiconFiles":[{}]},"de-DE":{"AutoApplyCustomLexiconFiles":[{}]}}}-->
+<speak xmlns="http://www.w3.org/2001/10/synthesis" xmlns:mstts="http://www.w3.org/2001/mstts" xmlns:emo="http://www.w3.org/2009/10/emotionml" version="1.0" xml:lang="en-US"><mstts:backgroundaudio src="https://github.com/jiatitti/dialogue-systems-1-2026/raw/refs/heads/main/labs/lab4/media/backgroundmusic.mp3" volume="0.5" fadein="3000" fadeout="4000" />
+<voice name="en-US-SaraNeural">
+<s /><mstts:express-as style="sad">You may write me down in <prosody contour="(18%, +15%) (30%, -9%) (76%, -50%)">history</prosody></mstts:express-as><s />
+<s /><mstts:express-as style="sad" styledegree="0.8"><prosody rate="+30.00%">With your</prosody> bitter, twisted <prosody rate="-20.00%" pitch="-10.00%">lies</prosody>,</mstts:express-as><s />
+<s /><mstts:express-as style="sad" styledegree="0.5"><prosody rate="+20.00%">You may</prosody> trod me <prosody rate="+20.00%">in the very </prosody><prosody volume="+10.00%" contour="(21%, -17%) (62%, +19%)">dirt</prosody></mstts:express-as><s />
+<mstts:express-as style="hopeful"><prosody rate="-48.00%" volume="-42.00%"><s /></prosody><prosody rate="+10.00%" volume="+10.00%">But still, like </prosody><prosody rate="-6.00%" volume="+10.00%" contour="(20%, +14%)">dust</prosody><prosody rate="-1.00%" volume="+46.00%">, </prosody><prosody rate="-10.00%" volume="+46.00%">I'll rise</prosody><prosody rate="-48.00%" volume="-42.00%"><s /></prosody></mstts:express-as>
+<s /><mstts:express-as style="hopeful"></mstts:express-as><s />
+<s /><mstts:express-as style="affectionate" styledegree="0.5"><prosody rate="-15.00%" volume="-25.00%">Does my sassiness</prosody><prosody volume="-25.00%"> upset</prosody><prosody volume="-25.00%" contour="(20%, -18%) (80%, +14%)"> you</prosody><prosody volume="-25.00%">?</prosody></mstts:express-as><s />
+<s /><mstts:express-as style="hopeful" styledegree="0.5"><prosody rate="-15.00%">Why are </prosody>you beset with <prosody contour="(76%, -31%)">gloom</prosody>?</mstts:express-as><s />
+<s /><mstts:express-as style="hopeful">’<prosody rate="+120.00%">Cause I</prosody><prosody rate="-10.00%" contour="(22%, +15%)"> walk</prosody> like I've got <prosody volume="+10.00%">oil wells</prosody></mstts:express-as><s />
+<s /><mstts:express-as style="hopeful"><prosody rate="-10.00%">Pumping </prosody><prosody rate="+20.00%">in my </prosody><prosody rate="-10.00%" contour="(17%, +23%) (39%, -26%)">living</prosody><prosody rate="-10.00%"> room.</prosody></mstts:express-as><s />
+<s /><mstts:express-as style="hopeful"></mstts:express-as><s />
+<s /><mstts:express-as style="hopeful"><prosody rate="+10.00%">Just like</prosody><prosody rate="-6.00%" contour="(45%, +15%)"> moons</prosody><break strength="x-weak" /> <prosody rate="+80.00%">and</prosody> like <prosody rate="-20.00%">suns</prosody>,</mstts:express-as><s />
+<s /><mstts:express-as style="hopeful">With the <prosody contour="(12%, +21%) (34%, -14%) (69%, -25%)">certainty</prosody> of <prosody rate="-10.00%" contour="(20%, -11%) (62%, +7%)">tides</prosody>,</mstts:express-as><s />
+<s /><mstts:express-as style="hopeful"><prosody rate="+20.00%">Just like</prosody><prosody rate="-10.00%" volume="+10.00%" contour="(21%, +25%)"> hopes</prosody> springing <prosody rate="+10.00%" contour="(20%, +19%)">high</prosody>,</mstts:express-as><s />
+<mstts:express-as style="hopeful"><s /><prosody rate="-10.00%" volume="+15.00%" pitch="+3.00%">Still </prosody><prosody rate="-5.00%" volume="+15.00%" pitch="+3.00%">I'll </prosody><prosody rate="-10.00%" volume="+15.00%" pitch="+3.00%">rise</prosody><s /></mstts:express-as></voice></speak>
